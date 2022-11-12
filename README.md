@@ -1,41 +1,58 @@
-# weatherApp
+<br/>
+<p align="center">
+  <a href="https://github.com/ghanim01/forevoapp">
+    <img src="./src/assets/forevoLogo.png" alt="Logo" width="80" height="80">
+  </a>
 
-This template should help get you started developing with Vue 3 in Vite.
+  <h3 align="center">Forevo News and Weather</h3>
 
-## Recommended IDE Setup
+  <p align="center">
+    News and Weather APP built with Vue.js 3 and Vite
+    <br/>
+    <br/>
+    <a href="https://github.com/ghanim01/forevoapp">View Demo</a>
+    .
+  </p>
+</p>
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+## Built With
 
-## Customize configuration
+- [Vue.js 3](https://vuejs.org/)
+- [Vuetify 3.0](https://next.vuetifyjs.com/en/)
+- [Vite](https://vitejs.dev/)
+- [Pinia](https://pinia.vuejs.org/)
+- [Vue Router](https://router.vuejs.org/)
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Getting Started
 
-## Project Setup
+### Installation
+
+1. Clone the repo
+
+```sh
+git clone https://github.com/ghanim01/forevoapp.git
+```
+
+2. Install NPM packages
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+3. Run project
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Creating A Pull Request
 
-```sh
-npm run build
-```
+## Authors
 
-### Run Unit Tests with [Vitest](https://vitest.dev/)
+- **Ahmed Ghanem** - ** - [Ahmed Ghanem](https://github.com/ghanim01/) - **
 
-```sh
-npm run test:unit
-```
+## Acknowledgements
 
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- []()
+- []()
+- []()

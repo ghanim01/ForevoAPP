@@ -26,11 +26,12 @@ export const useNewsStore = defineStore("newsStore", {
       this.searchNews();
     },
     async searchNews() {
+      const apiKEY = import.meta.env.VITE_API_KEY;
       let response = await axios.get("https://newsapi.org/v2/top-headlines", {
         params: {
           country: this.cityresponseResult.country,
           sortBy: "publishedAt",
-          apiKey: "54f15d50e2ff41acadc5109c8b8d4243",
+          apiKey: apiKEY,
         },
       });
       this.newsSearchResult = response.data.articles;

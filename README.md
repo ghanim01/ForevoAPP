@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/ghanim01/forevoapp">
-    <img src="./src/assets/forevoLogo.png" alt="Logo" width="80" height="80">
+    <img src="./src/assets/forevoLogo.png" alt="Logo" width="120">
   </a>
 
   <h3 align="center">Forevo News and Weather</h3>
@@ -49,10 +49,4 @@ npm run dev
 
 ## Authors
 
-- **Ahmed Ghanem** - ** - [Ahmed Ghanem](https://github.com/ghanim01/) - **
-
-## Acknowledgements
-
-- []()
-- []()
-- []()
+[Ahmed Ghanem](https://github.com/ghanim01/)

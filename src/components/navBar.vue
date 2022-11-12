@@ -40,7 +40,7 @@
 </template>
 <script>
 // import cities from "cities.json";
-// import _ from "lodash";
+// import axios from "axios";
 import { onMounted, ref } from "vue";
 import { useWeatherStore } from "../stores/weatherStore";
 import { useNewsStore } from "../stores/NewsStore";
@@ -103,7 +103,29 @@ export default {
   //     });
   //   },
   // },
-
+  // watch: {
+  //   model() {
+  //     const xapiKey = import.meta.env.VITE_XAPI_KEY;
+  //     axios
+  //       .get("https://api.api-ninjas.com/v1/city", {
+  //         params: {
+  //           name: this.model,
+  //         },
+  //         headers: {
+  //           "X-Api-Key": xapiKey,
+  //         },
+  //       })
+  //       .then(function (response) {
+  //         console.log(response);
+  //       })
+  //       .catch(function (error) {
+  //         console.log(error);
+  //       })
+  //       .then(function () {
+  //         // always executed
+  //       });
+  //   },
+  // },
   // watch: {
   //   model() {
   //     // Items have already been loaded

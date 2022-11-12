@@ -2,7 +2,7 @@ import { ref } from "vue";
 import { defineStore } from "pinia";
 import cities from "cities.json";
 import _ from "lodash";
-import axios from "../utils/axios";
+import axios from "axios";
 
 export const useNewsStore = defineStore("newsStore", {
   state: () => ({
@@ -27,7 +27,7 @@ export const useNewsStore = defineStore("newsStore", {
     },
     async searchNews() {
       const apiKEY = import.meta.env.VITE_API_KEY;
-      let response = await axios.get("https://newsapi.org/v2/top-headlines", {
+      let response = await axios.get("/newsapi/v2/top-headlines", {
         params: {
           country: this.cityresponseResult.country,
           sortBy: "publishedAt",

@@ -1,6 +1,6 @@
 import { ref } from "vue";
 import { defineStore } from "pinia";
-import axios from "../utils/axios";
+import axios from "axios";
 export const useSoccerStore = defineStore("soccerStore", {
   state: () => ({
     soccerResults: ref({}),

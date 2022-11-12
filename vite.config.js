@@ -15,7 +15,23 @@ export default defineConfig({
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
+      "/newsapi": {
+        target: "https://newsapi.org/",
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/newsapi/, ""),
+      },
+      "/weatherapi": {
+        target: "https://api.openweathermap.org/data/2.5/",
+        changeOrigin: true,
+        secure: false,
+        rewrite: (path) => path.replace(/^\/weatherapi/, ""),
+      },
     },
+  },
+  build: {
+    sourcemap: true,
+    minify: "esbuild",
   },
   plugins: [
     vue({

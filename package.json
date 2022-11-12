@@ -1,0 +1,42 @@
+{
+  "name": "weatherapp",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test:unit": "vitest --environment jsdom --root src/",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@hapi/bourne": "^3.0.0",
+    "@mdi/font": "^7.0.96",
+    "@nabla/vite-plugin-eslint": "^1.4.1",
+    "axios": "^1.1.3",
+    "axios-extensions": "^3.1.6",
+    "axios-request-cache": "^1.0.2",
+    "cities.json": "^1.1.14",
+    "fotmob": "^1.0.4",
+    "got": "^12.5.2",
+    "lodash": "^4.17.21",
+    "pinia": "^2.0.23",
+    "vite-plugin-vuetify": "^1.0.0",
+    "vue": "^3.2.41",
+    "vue-router": "^4.1.5",
+    "vuetify": "^3.0.0"
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/test-utils": "^2.1.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "jsdom": "^20.0.1",
+    "prettier": "^2.7.1",
+    "sass": "^1.55.0",
+    "vite": "^3.1.8",
+    "vite-plugin-browser-sync": "^1.0.0",
+    "vitest": "^0.24.3"
+  }
+}

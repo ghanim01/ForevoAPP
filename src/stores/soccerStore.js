@@ -18,7 +18,6 @@ export const useSoccerStore = defineStore("soccerStore", {
   actions: {
     async searchSoccer() {
       const authToken = import.meta.env.VITE_SOCCER_TOKEN;
-      console.log(authToken);
       var config = {
         method: "get",
         url: "/api/competitions/PL/matches",

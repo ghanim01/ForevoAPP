@@ -1,7 +1,7 @@
 <br/>
 <p align="center">
   <a href="https://github.com/ghanim01/forevoapp">
-    <img src="./src/assets/forevoLogo.png" alt="Logo" width="120">
+    <img src="./src/assets/forevoLogo.png" alt="Logo" width="160">
   </a>
 
   <h3 align="center">Forevo News and Weather</h3>
@@ -10,7 +10,7 @@
     News and Weather APP built with Vue.js 3 and Vite
     <br/>
     <br/>
-    <a href="https://github.com/ghanim01/forevoapp">View Demo</a>
+    <a href="https://forevoapp.vercel.app/">View Demo</a>
     .
   </p>
 </p>
@@ -44,8 +44,6 @@ npm install
 ```sh
 npm run dev
 ```
-
-### Creating A Pull Request
 
 ## Authors
 

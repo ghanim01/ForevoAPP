@@ -23,7 +23,7 @@ export const useSoccerStore = defineStore("soccerStore", {
         url: "https://api.football-data.org/v4/api/competitions/PL/matches",
         headers: {
           "X-Auth-Token": authToken,
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Origin": "https://api.football-data.org/v4/api",
         },
         params: {
           status: "FINISHED",

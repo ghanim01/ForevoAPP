@@ -46,6 +46,9 @@ export const useWeatherStore = defineStore("weatherStore", {
       let response = await axios.get(
         "https://api.openweathermap.org/data/2.5/weatherapi/weather",
         {
+          headers: {
+            "Access-Control-Allow-Origin": "https://api.openweathermap.org/",
+          },
           params: {
             lat: this.cityresponseult.lat,
             lon: this.cityresponseult.lng,

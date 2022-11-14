@@ -30,6 +30,9 @@ export const useNewsStore = defineStore("newsStore", {
       let response = await axios.get(
         "https://newsapi.org/newsapi/v2/top-headlines",
         {
+          headers: {
+            "Access-Control-Allow-Origin": "https://newsapi.org/newsapi/v2",
+          },
           params: {
             country: this.cityresponseResult.country,
             sortBy: "publishedAt",

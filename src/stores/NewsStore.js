@@ -27,13 +27,16 @@ export const useNewsStore = defineStore("newsStore", {
     },
     async searchNews() {
       const apiKEY = import.meta.env.VITE_API_KEY;
-      let response = await axios.get("/newsapi/v2/top-headlines", {
-        params: {
-          country: this.cityresponseResult.country,
-          sortBy: "publishedAt",
-          apiKey: apiKEY,
-        },
-      });
+      let response = await axios.get(
+        "https://newsapi.org/newsapi/v2/top-headlines",
+        {
+          params: {
+            country: this.cityresponseResult.country,
+            sortBy: "publishedAt",
+            apiKey: apiKEY,
+          },
+        }
+      );
       this.newsSearchResult = response.data.articles;
     },
   },

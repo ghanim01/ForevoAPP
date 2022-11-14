@@ -20,7 +20,7 @@ export const useSoccerStore = defineStore("soccerStore", {
       const authToken = import.meta.env.VITE_SOCCER_TOKEN;
       var config = {
         method: "get",
-        url: "/api/competitions/PL/matches",
+        url: "https://api.football-data.org/v4/api/competitions/PL/matches",
         headers: {
           "X-Auth-Token": authToken,
           "Access-Control-Allow-Origin": "*",

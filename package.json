@@ -16,6 +16,8 @@
     "cities.json": "^1.1.14",
     "lodash": "^4.17.21",
     "pinia": "^2.0.23",
+    "vite-plugin-bundle-analyzer": "^0.0.1",
+    "vite-plugin-chunk-split": "^0.4.3",
     "vite-plugin-vuetify": "^1.0.0",
     "vue": "^3.2.41",
     "vue-router": "^4.1.5",

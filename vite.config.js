@@ -4,7 +4,7 @@ import vuetify from "vite-plugin-vuetify";
 import { transformAssetUrls } from "vite-plugin-vuetify";
 import eslintPlugin from "@nabla/vite-plugin-eslint";
 import VitePluginBrowserSync from "vite-plugin-browser-sync";
-import { splitVendorChunkPlugin } from "vite";
+import { chunkSplitPlugin } from "vite-plugin-chunk-split";
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -37,13 +37,14 @@ export default defineConfig({
     // minify: "esbuild",
     cssTarget: "chrome79",
     minify: "terser",
-    brotliSize: false,
+    reportCompressedSize: true,
     chunkSizeWarningLimit: 5000,
     terserOptions: {
       compress: {
         drop_console: false,
         pure_funcs: ["console.log", "console.info"],
         drop_debugger: true,
+        toplevel: false,
       },
     },
     assetsDir: "static/assets",
@@ -57,7 +58,7 @@ export default defineConfig({
   },
   base: "./",
   plugins: [
-    splitVendorChunkPlugin(),
+    chunkSplitPlugin(),
     vue({
       template: { transformAssetUrls },
     }),

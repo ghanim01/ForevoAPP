@@ -19,7 +19,8 @@
         <v-sheet
           theme="light"
           height="120px"
-          class="d-flex flex-row m-0 pa-0 justify-center align-center text-center"
+          class="d-flex flex-row m-0 pa-0 justify-center align-center text-center mx-2"
+          rounded
         >
           <img :src="competition.emblem" width="100" />
         </v-sheet>
@@ -74,7 +75,8 @@
         <v-sheet
           theme="light"
           height="120px"
-          class="d-flex flex-row m-0 pa-0 justify-center align-center text-center"
+          class="d-flex flex-row m-0 pa-0 justify-center align-center text-center mx-2"
+          rounded
         >
           <img :src="WCcompetition.emblem" width="100" />
         </v-sheet>

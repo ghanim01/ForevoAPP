@@ -20,10 +20,10 @@ export const useSoccerStore = defineStore("soccerStore", {
       const authToken = import.meta.env.VITE_SOCCER_TOKEN;
       var config = {
         method: "get",
-        url: "https://api.football-data.org/v4/api/competitions/PL/matches",
+        url: "/api/competitions/PL/matches",
         headers: {
           "X-Auth-Token": authToken,
-          "Access-Control-Allow-Origin": "https://api.football-data.org/v4/api",
+          "Access-Control-Allow-Credentials": true,
         },
         params: {
           status: "FINISHED",
@@ -41,7 +41,7 @@ export const useSoccerStore = defineStore("soccerStore", {
         url: "/api/competitions/WC/matches",
         headers: {
           "X-Auth-Token": authToken,
-          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Credentials": true,
         },
       };
       let res = await axios(config).catch(function (error) {

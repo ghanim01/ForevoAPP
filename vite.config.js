@@ -18,13 +18,13 @@ export default defineConfig({
         rewrite: (path) => path.replace(/^\/api/, ""),
       },
       "/newsapi": {
-        target: "https://newsapi.org/",
+        target: "https://newsapi.org/v2/top-headlines",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/newsapi/, ""),
       },
       "/weatherapi": {
-        target: "https://api.openweathermap.org/data/2.5/",
+        target: "https://api.openweathermap.org/data/2.5/weather",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/weatherapi/, ""),

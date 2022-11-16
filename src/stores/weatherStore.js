@@ -43,20 +43,17 @@ export const useWeatherStore = defineStore("weatherStore", {
     },
     async searchWeather() {
       const appID = import.meta.env.VITE_APP_ID;
-      let response = await axios.get(
-        "https://api.openweathermap.org/data/2.5/weatherapi/weather",
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "https://api.openweathermap.org/",
-          },
-          params: {
-            lat: this.cityresponseult.lat,
-            lon: this.cityresponseult.lng,
-            appid: appID,
-            units: "metric",
-          },
-        }
-      );
+      let response = await axios.get("/weatherapi", {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+        },
+        params: {
+          lat: this.cityresponseult.lat,
+          lon: this.cityresponseult.lng,
+          appid: appID,
+          units: "metric",
+        },
+      });
       var datetime = new Date(response.data.dt * 1000);
       var sunrise = new Date(response.data.sys.sunrise * 1000);
       var sunset = new Date(response.data.sys.sunset * 1000);

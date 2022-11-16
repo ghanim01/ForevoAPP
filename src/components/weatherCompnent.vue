@@ -1,6 +1,12 @@
 <template>
   <div>
-    <v-card class="mx-3 py-3" width="100%">
+    <v-card
+      class="mx-3 py-3"
+      theme="dark"
+      color="grey-darken-4"
+      min-width="100%"
+      rounded
+    >
       <v-card-title
         class="d-flex align-center justify-space-between text-h4 text-grey-lighten-1 pb-0"
       >
@@ -14,13 +20,18 @@
       <v-card-text class="pt-0 pb-1 mx-3">
         <v-row align="center" class="text-center">
           <v-col cols="12" md="12" lg="12">
-            <h1 class="text-h2 font-weight-regular">
+            <h1 class="text-h2 font-weight-regular text-teal-lighten-4">
               {{ Math.floor(searchRes.temp) }}&deg;C
             </h1>
             <v-card-subtitle
               class="d-flex justify-center text-center align-center mt-1"
             >
-              <v-img :src="icon" max-width="32px" class="me-1"></v-img>
+              <v-img
+                :src="icon"
+                max-width="32px"
+                class="me-1"
+                color="white"
+              ></v-img>
               {{ searchRes.description }}
             </v-card-subtitle>
           </v-col>
@@ -28,22 +39,22 @@
       </v-card-text>
 
       <v-row class="py-3 px-3 text-start justify-space-around" no-gutters>
-        <v-col col="6" md="4" lg="4" align="center">
-          <v-list>
+        <v-col col="6" md="4" lg="4" align="center" class="pa-1">
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Real Feel">
               <v-list-item-subtitle
                 >{{ searchRes.feels_like }} &deg;C</v-list-item-subtitle
               >
             </v-list-item>
           </v-list>
-          <v-list>
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Sunrise">
               <v-list-item-subtitle>{{
                 searchRes.sunrise
               }}</v-list-item-subtitle>
             </v-list-item>
           </v-list>
-          <v-list>
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Sunset">
               <v-list-item-subtitle>{{
                 searchRes.sunset
@@ -51,15 +62,15 @@
             </v-list-item>
           </v-list>
         </v-col>
-        <v-col col="6" md="4" lg="4" align="center">
-          <v-list>
+        <v-col col="6" md="4" lg="4" align="center" class="pa-1">
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Max Temp ">
               <v-list-item-subtitle>
                 {{ searchRes.temp_max }} &deg;C
               </v-list-item-subtitle>
             </v-list-item>
           </v-list>
-          <v-list>
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Humidity">
               <v-list-item-subtitle>
                 {{ Math.floor(searchRes.humidity) }}
@@ -67,7 +78,7 @@
               >
             </v-list-item>
           </v-list>
-          <v-list>
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Clouds">
               <v-list-item-subtitle
                 >{{ searchRes.clouds }} %</v-list-item-subtitle
@@ -75,22 +86,22 @@
             </v-list-item>
           </v-list>
         </v-col>
-        <v-col col="6" md="4" lg="4" align="center">
-          <v-list>
+        <v-col col="6" md="4" lg="4" align="center" class="pa-1">
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Min Temp ">
               <v-list-item-subtitle>
                 {{ searchRes.temp_min }} &deg;C</v-list-item-subtitle
               >
             </v-list-item>
           </v-list>
-          <v-list>
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Wind Speed">
               <v-list-item-subtitle
                 >{{ searchRes.windSpeed }} M/S</v-list-item-subtitle
               >
             </v-list-item>
           </v-list>
-          <v-list>
+          <v-list class="transBG">
             <v-list-item density="comfortable" title="Wind Degree">
               <v-list-item-subtitle
                 >{{ searchRes.windDeg }} Degree</v-list-item-subtitle
@@ -175,4 +186,8 @@ export default {
 //   switchedIMG,
 // });
 </script>
-<style></style>
+<style>
+.transBG {
+  background-color: transparent !important;
+}
+</style>

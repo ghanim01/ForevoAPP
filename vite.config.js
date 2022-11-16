@@ -12,7 +12,7 @@ export default defineConfig({
     cors: true,
     proxy: {
       "/api": {
-        target: "https://api.football-data.org/v4/",
+        target: "https://api.football-data.org/v4",
         changeOrigin: true,
         secure: false,
         rewrite: (path) => path.replace(/^\/api/, ""),

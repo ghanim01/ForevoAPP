@@ -21,6 +21,10 @@
     {
       "source": "/newsapi",
       "destination": "https://newsapi.org/v2/top-headlines"
+    },
+    {
+      "source": "/weatherapi",
+      "destination": "https://api.openweathermap.org/data/2.5/weather"
     }
   ]
 }

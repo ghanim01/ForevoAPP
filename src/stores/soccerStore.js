@@ -38,7 +38,7 @@ export const useSoccerStore = defineStore("soccerStore", {
       const authToken = import.meta.env.VITE_SOCCER_TOKEN;
       var config = {
         method: "get",
-        url: "/api/competitions/WC/matches",
+        url: "/api/competitions/CL/matches",
         headers: {
           "X-Auth-Token": authToken,
           "Access-Control-Allow-Credentials": true,
